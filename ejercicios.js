@@ -35,3 +35,35 @@ function ejercicio4_3(...num) {
 }
 
 ejercicio4_3(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+function ejercicio5() {
+    return Math.round(Math.random());
+}
+
+if (ejercicio5() != 0) {
+    console.log("CRUZ");
+} else {
+    console.log("CARA");
+}
+
+function ejercicio6(num1, num2, num3) {
+    return num1 + num2 + num3;
+}
+
+console.log(ejercicio6(1, 5, 7));
+
+function ejercicio6_2(nombre, apellido1, apellido2) {
+    return "" + nombre + apellido1 + apellido2;
+}
+
+console.log(ejercicio6_2("Jose", "Ramos", "Rodriguez"));
+
+function ejercicio6_3(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+function
