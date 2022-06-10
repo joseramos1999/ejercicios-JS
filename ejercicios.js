@@ -140,3 +140,84 @@ function ejercicio8() {
             break;
     }
 }
+
+function ejercicio9() {
+    var ale = Math.random();
+    console.log(ale);
+    var pi = Math.floor(Math.pi());
+    console.log(pi);
+}
+
+function ejercicio10(nombre) {
+    var nom = Array.from(nombre);
+
+    for (let i = 0; i < nom.length; i++) {
+        if (nom[i] == "A" || nom[i] == "a") {
+            nom[i] = "o";
+        }
+    }
+    nom = nom.join("");
+    return "" + nom;
+}
+
+console.log(ejercicio10("Paco"));
+
+function ejercicio10_2(palabra) {
+    return palabra.startsWith("aca");
+}
+
+console.log(ejercicio10_2("academia"));
+
+function ejercicio10_3(palabra) {
+    return palabra.repeat(5);
+}
+
+console.log(ejercicio10_3("Paco"));
+
+function ejercicio11() {
+    for (var i = 0; i < 10; i++) {
+        console.log("I <3 Code");
+    }
+    var i = 0;
+    while (i < 10) {
+        console.log("I hate Code");
+        i++;
+    }
+}
+
+function ejercicio12() {
+    let array = ['a', 'b', 'c', 'd', 'e'];
+    array.forEach(letra => console.log(letra));
+
+    let num = 5;
+
+    for (let i = 0; i < 5; i++) {
+        num--;
+        console.log(num);
+    }
+}
+
+function ejercicio14() {
+    let emojis = ["🍔", "🌯", "🍣", "🍕", "🍜", "🍱", "🍙", "🍘", "🥩"];
+    console.log(emojis.fill("🍺", 4, emojis.length));
+    let emojis2 = ["🍕", "🍕", "🍍", "🍕", "🍕"];
+    const pina = (currentValue) => currentValue == "🍍";
+    console.log(emojis2.some(pina));
+    console.log(emojis2.copyWithin(2));
+    let noRepeat = [...new Set(emojis2)];
+    console.log(noRepeat);
+    let emojis3 = ["🍓", "🍋", "🍓", "🍋", "🍓"];
+    for (var i = 0; i < emojis3.length; i++) {
+        if (emojis3[i] == "🍓") {
+            emojis3[i] = "🍄";
+        }
+    }
+    console.log(emojis3);
+    let emojis4 = ["🌶", "🥛", "🌶", "🥛", "🌶", "🥛"];
+    for (var i = 0; i < emojis4.length; i++) {
+        if (emojis4[i] == "🌶") {
+            emojis4.splice(i + 1, 0, "🥵");
+        }
+    }
+    console.log(emojis4);
+}
