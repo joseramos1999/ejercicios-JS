@@ -1,0 +1,48 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Free-avengers-backgrounds.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.preguntas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preguntas button {
+    width: 150px;
+    margin: 1%;
+    height: 35px;
+    color: black;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+}
+
+.preguntas button:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 10px white;
+    cursor: pointer;
+}
+
+#preguntas2 {
+    display: none;
+}
+
+#preguntas3 {
+    display: none;
+}
+
+#q2 {
+    display: none;
+}
+
+#q3 {
+    display: none;
+}
